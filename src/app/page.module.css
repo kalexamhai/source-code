@@ -1,0 +1,88 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  box-shadow: 0 0 20px #000;
+  padding: 16px 16%;
+  height: var(--navbar-height);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+}
+
+.navIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.componentHeading {
+  margin-top: var(--navbar-height);
+  width: 100%;
+  background-color: var(--accent);
+  color: #FFF;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.tilesContainer {
+  width: 100%;
+  padding: 16px 16%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.departmentTile {
+  font-size: 2rem;
+  background-color: var(--accent);
+  color: #FFF;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.subjectTile {
+  font-size: 1rem;
+  background-color: var(--accent);
+  padding: 10px;
+  margin-top: 20px;
+  color: #FFF;
+  width: 500px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .tilesContainer,
+  .navbar {
+    padding: 16px;
+  }
+
+  .departmentTile {
+    height: 120px;
+    width: 120px;
+    font-size: 1.5rem;
+  }
+}
